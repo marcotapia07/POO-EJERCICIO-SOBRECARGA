@@ -1,0 +1,70 @@
+public class Operaciones {
+    public int a;
+    public int b;
+    public int c;
+    public double d;
+    public double e;
+
+    public Operaciones(int a, int b){
+        this.a = a;
+        this.b = b;
+    }
+
+    public Operaciones(){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    public Operaciones(double d, double e){
+        this.d = d;
+        this.e = e;
+    }
+
+    public void suma(){
+        int suma;
+        System.out.println("El primer numero es: " + a);
+        System.out.println("El segundo numero es: " + b);
+        suma= a+b;
+        System.out.println(suma);
+
+
+
+    }
+
+    public void suma(int a, int b, int c){
+        int suma;
+        System.out.println("El primer numero es: " + a);
+        System.out.println("El segundo numero es: " + b);
+        System.out.println("El tercer numero es: " + c);
+        suma=a+b+c;
+        System.out.println(suma);
+    }
+
+    public void suma(double d, double e){
+        double suma;
+        System.out.println("El primer numero es: " + d);
+        System.out.println("El segundo numero es: " + e);
+        suma=d+e;
+        System.out.println(suma);
+
+    }
+
+    public static void main(String[] args){
+        Operaciones s1 = new Operaciones(4,5);
+        s1.suma();
+
+
+        System.out.println("------------------------------");
+
+        Operaciones s2 = new Operaciones();
+        s2.suma(45,45, 70);
+
+        System.out.println("------------------------------");
+
+        Operaciones s3 = new Operaciones();
+        s3.suma(12.4, 4.5);
+
+    }
+
+}
